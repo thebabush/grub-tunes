@@ -71,7 +71,7 @@ export default {
   },
   methods: {
     fetchTunes: function () {
-      this.$http.get('/static/library.json').then((tunes) => {
+      this.$http.get('static/library.json').then((tunes) => {
         this.tunes = tunes.body.tunes;
       })
     },

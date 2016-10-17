@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container">
     <div class="page-header text-md-center">
-      <a href="/" class="nostyle"><h1>GRUB Tunes</h1></a>
+      <a href="." class="nostyle"><h1>GRUB Tunes</h1></a>
       <p class="lead">Your only source of awesome monophonic boot music</p>
     </div>
 

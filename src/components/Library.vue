@@ -42,6 +42,8 @@
 <script>
 import synth from '../synth'
 
+var { tunes } = require('!json!./tunes.json');
+
 export default {
   name: 'library',
   components: {
@@ -50,7 +52,7 @@ export default {
     return {
       currentTune: {},
       filterKey: '',
-      tunes: []
+      tunes: tunes
     }
   },
   computed: {
@@ -66,15 +68,7 @@ export default {
       });
     }
   },
-  created: function () {
-    this.fetchTunes();
-  },
   methods: {
-    fetchTunes: function () {
-      this.$http.get('static/library.json').then((tunes) => {
-        this.tunes = tunes.body.tunes;
-      })
-    },
     play: function (tune, event) {
       synth.play(tune.data);
       event.preventDefault();

@@ -27,7 +27,10 @@
             <h4 class="modal-title">{{ currentTune.title }}</h4>
           </div>
           <div class="modal-body">
+            <h4>Instructions:</h4>
+            <p>Add the following line to <code>/etc/default/grub</code>:</p>
             <pre>GRUB_INIT_TUNE="{{ currentTune.data }}"</pre>
+            <p>Execute <code>sudo update-grub</code>.</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary btn-small" data-dismiss="modal">Close</button>

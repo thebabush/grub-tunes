@@ -1,21 +1,27 @@
 <template>
-  <div id="app" class="container">
-    <div class="page-header text-md-center">
-      <a href="." class="nostyle"><h1>GRUB Tunes</h1></a>
-      <p class="lead">Your only source of awesome monophonic boot music</p>
-    </div>
+  <div id="app">
+    <navBar></navBar>
 
-    <library></library>
+    <div id="main-container" class="container">
+      <div class="page-header text-md-center">
+        <a href="." class="nostyle"><h1>GRUB Tunes</h1></a>
+        <p class="lead">Your only source of awesome monophonic boot music</p>
+      </div>
+
+      <library></library>
+    </div>
   </div>
 </template>
 
 <script>
 import Library from './components/Library'
+import NavBar from './components/NavBar'
 
 export default {
   name: 'app',
   components: {
-    Library
+    Library,
+    NavBar
   }
 }
 </script>
@@ -26,11 +32,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  margin-top: 60px;
-}
-
-.page-header {
-  padding-bottom: 1em;
 }
 
 a.nostyle {

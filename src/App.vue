@@ -38,4 +38,9 @@ a.nostyle {
   text-decorations: none;
   color: inherit;
 }
+
+.page-header {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
 </style>

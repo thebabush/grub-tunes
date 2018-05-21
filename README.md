@@ -4,7 +4,7 @@
 
 ## Demo
 
-[GRUB Tunes](https://kenoph.github.io/grub-tunes/)
+[GRUB Tunes](https://thebabush.github.io/grub-tunes/)
 
 You can preview the tunes and hear what they sound like without having to reboot every time.
 
